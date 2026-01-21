@@ -1,0 +1,25 @@
+"""
+Author: Jacob Miranda
+Date: 1/19/2026
+Description: Plays a shell game with the user where they bet money to guess 
+a winning cup. Ends when user runs out of money or willfully chooses to stop.
+"""
+
+import check_input
+def main():
+    wallet = 100
+    bet = int(-1)
+    print("-Shell Game-")
+    print("Find the ball to double your bet!")
+    print("")
+    while int(wallet) > 0:
+        bet = check_input.get_int_range("Please Enter your bet: ", 1, int(wallet))
+        return
+            
+            
+    
+    print("  _____ ")
+    print(" /     \\")
+    print("/       \\")
+    print("---------")
+main()
